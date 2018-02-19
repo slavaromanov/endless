@@ -1,0 +1,134 @@
+body
+  font-family: 'Open Sans Condensed', sans-serif
+
+  .overlay
+    &:after
+      content: ''
+      width: 100%
+      height: 100%
+      top: 0px
+      left: 0px
+      z-index: 0
+      opacity: .8
+      position: fixed
+      top: 0
+      left: 0
+      bottom: 0
+      right: 0
+      background: #000
+    
+    overflow: hidden
+    max-height: 100%
+    max-width: 100%
+
+.header2
+  z-index: 9
+
+#box
+  position: fixed 
+  z-index: 10
+  top: 0
+  display: table
+  text-align: center
+  width: 100%
+  height: 100%
+
+#popup
+  z-index: 10
+  position: relative
+  text-align: center 
+  margin: 0px auto
+  display: block
+  -moz-background-clip: padding
+  -o-background-clip: padding
+  -webkit-background-clip: padding-box
+  background-clip: padding-box
+  background-color: #fff
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.18)
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.18)
+  -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.18)
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.18)
+  -webkit-transform-origin: top center
+  -moz-transform-origin: top center
+  -o-transform-origin: top center
+  transform-origin: top center
+  -webkit-animation: iconosani 1.2s forwards
+  animation: iconosani 1.2s forwards
+  -moz-animation: iconosani 1.2s forwards
+  -o-animation: iconosani 1.2s forwards
+
+@-webkit-keyframes iconosani
+  0%
+    -webkit-transform: perspective(800px) rotateX(-90deg)
+    -moz-transform: perspective(800px) rotateX(-90deg)
+    -o-transform: perspective(800px) rotateX(-90deg)
+    opacity: 1
+
+  40%
+    -webkit-transform: perspective(800px) rotateX(30deg)
+    -moz-transform: perspective(800px) rotateX(30deg)
+    -o-transform: perspective(800px) rotateX(30deg)
+    opacity: 1
+
+  70%
+    -webkit-transform: perspective(800px) rotateX(-10deg)
+    -moz-transform: perspective(800px) rotateX(-10deg)
+    -o-transform: perspective(800px) rotateX(-10deg)
+
+  100%
+    -webkit-transform: perspective(800px) rotateX(0deg)
+    -moz-transform: perspective(800px) rotateX(0deg)
+    -o-transform: perspective(800px) rotateX(0deg)
+    opacity: 1
+
+@media screen and (max-width: 600px)
+  #popup
+    width: 370px
+    height: 480px
+
+@media screen and (max-width: 400px)
+  #popup
+    width: 350px
+    height: 480px
+
+@-webkit-keyframes fade
+  0%
+    box-shadow: 0 0 0 0 transparent
+
+  66%
+    box-shadow: 0 0 0 10px #3D79D0, 0 0 0 12px white
+
+  100%
+    box-shadow: 0 0 0 20px  transparent, 0 0 0 22px  transparent
+
+@-moz-keyframes fade
+  0%
+    box-shadow: 0 0 0 0 transparent
+
+  66%
+    box-shadow: 0 0 0 10px #3D79D0, 0 0 0 12px white
+
+  100%
+    box-shadow: 0 0 0 20px  transparent, 0 0 0 22px  transparent
+
+@-o-keyframes fade
+  0%
+    box-shadow: 0 0 0 0 transparent
+
+  66%
+    box-shadow: 0 0 0 10px #3D79D0, 0 0 0 12px white
+
+  100%
+    box-shadow: 0 0 0 20px  transparent, 0 0 0 22px  transparent
+
+@keyframes fade
+  0%
+    box-shadow: 0 0 0 0 transparent
+
+  66%
+    box-shadow: 0 0 0 10px #3D79D0, 0 0 0 12px white
+
+  100%
+    box-shadow: 0 0 0 20px  transparent, 0 0 0 22px  transparent
+
+
